@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Ton Nom</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+<nav>
+  <h1>TonLogo</h1>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+    <div class="hero">
+      <h2>Je crée des sites web modernes et responsives</h2>
+      <p>Développeur Front-End / Créateur de site vitrine</p>
+      <a href="#contact" class="cta">Discutons ensemble</a>
+    </div>
+  </header>
+
+<section id="about" class="fade-in">
+  <h2>À propos de moi</h2>
+  <div class="about-container">
+    <img src="logo.jpg" alt="Moi" class="about-img">
+    <div>
+      <p>
+        Je suis <strong>développeur web freelance</strong>, spécialisé en création de sites vitrines modernes et responsives.  
+        J’accompagne les entrepreneurs, artisans et commerçants pour les aider à avoir une présence professionnelle en ligne.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section id="services" class="fade-in">
+  <h2>Mes services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>💻 Site vitrine</h3>
+      <p>Un site professionnel pour présenter votre activité 24h/24.</p>
+    </div>
+    <div class="service-card">
+      <h3>📱 Responsive</h3>
+      <p>Optimisé pour tous les écrans : PC, tablette et smartphone.</p>
+    </div>
+    <div class="service-card">
+      <h3>🔍 Référencement</h3>
+      <p>SEO de base pour vous aider à être trouvé sur Google.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projets" class="fade-in">
+  <h2>Mes projets</h2>
+  <div class="grid">
+    <div class="project-card">
+      <img src="boucherie.png" alt="Site Boucherie">
+      <h3>Boucherie Claude</h3>
+      <p>Site vitrine clair, responsive, adapté aux commerces locaux.</p>
+    </div>
+    <div class="project-card">
+      <img src="geopevele.png" alt="Artisan Menuisier">
+      <h3>Bureau d'études géotechniques</h3>
+      <p>Site moderne avec galerie de réalisations et formulaire de contact.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="fade-in">
+  <h2>Me contacter</h2>
+  <p class="contact-intro">💬 Un projet ou une question ? <br><strong>Discutons ensemble.</strong></p>
+  <form action="mailto:tonemail@mail.com" method="post" enctype="text/plain">
+    <input type="text" name="Nom" placeholder="Votre nom" required>
+    <input type="email" name="Email" placeholder="Votre email" required>
+    <textarea name="Message" placeholder="Votre message" rows="5" required></textarea>
+    <button type="submit">Envoyer le message</button>
+  </form>
+</section>
+
+
+  <footer>
+    <p>© 2025 Ton Nom. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script> 
+  
+</body>
+</html>
