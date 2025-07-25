@@ -3,26 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio - Ton Nom</title>
+  <title>Antoine - Créateur de site web à Templeuve - Portfolio</title>
+  <meta name="description" content="Portfolio de créateur de site web à Templeuve (Hauts-de-France). Création de sites vitrine, modernes et responsive pour professionnels locaux.">
+  <meta name="keywords" content="création site web Templeuve, développeur web Templeuve, portfolio développeur freelance, site vitrine Templeuve">
   <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Antoine - Créateur de site web",
+  "image": "https://tonsite.com/tonlogo.jpg",
+  "url": "https://tonsite.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Templeuve-en-Pévèle",
+    "postalCode": "59242",
+    "addressCountry": "FR"
+  },
+  "description": "Créateur de sites web vitrine à Templeuve, je conçois des sites modernes et responsives pour professionnels.",
+  "telephone": "+33 6 12 34 56 78",
+  "priceRange": "€€"
+}
+</script>
+
 <body>
   <header>
-<nav>
-  <h1>TonLogo</h1>
-
-  <div class="hamburger" id="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#" class="logo">Antoine<span class="logo-dot">.</span></a>
+    
+    <ul class="nav-links">
+      <li><a href="#about"><i class="fa fa-user"></i> À propos</a></li>
+      <li><a href="#projects"><i class="fa fa-briefcase"></i> Projets</a></li>
+      <li><a href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+    </ul>
+    
+    <div class="nav-right">
+            <button id="theme-toggle"><i data-lucide="moon"></i></button>
+      <div class="hamburger" aria-label="Menu" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
   </div>
-
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#services">Services</a></li>
-    <li><a href="#projets">Projets</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
 </nav>
+
+
 
     <div class="hero">
       <h2>Je crée des sites web modernes et responsives</h2>
@@ -31,15 +58,15 @@
     </div>
   </header>
 
-<section id="about" class="fade-in">
+<section id="about" class="fade-in parallas">
   <h2>À propos de moi</h2>
   <div class="about-container">
-    <img src="logo.jpg" alt="Moi" class="about-img">
+    <img src="img/logo.jpg" alt="Moi" class="about-img">
     <div>
-      <p>
-        Je suis <strong>développeur web freelance</strong>, spécialisé en création de sites vitrines modernes et responsives.  
-        J’accompagne les entrepreneurs, artisans et commerçants pour les aider à avoir une présence professionnelle en ligne.
-      </p>
+  <p>
+    Je suis créateur de sites web basé à <strong>Templeuve-en-Pévèle (59)</strong>, dans les Hauts-de-France.
+    J’aide les artisans, commerçants et entrepreneurs locaux à avoir une présence professionnelle en ligne.
+  </p>
     </div>
   </div>
 </section>
@@ -67,14 +94,57 @@
   <h2>Mes projets</h2>
   <div class="grid">
     <div class="project-card">
-      <img src="boucherie.png" alt="Site Boucherie">
+      <img src="img/boucherie.png" alt="Site Boucherie">
       <h3>Boucherie Claude</h3>
       <p>Site vitrine clair, responsive, adapté aux commerces locaux.</p>
     </div>
     <div class="project-card">
-      <img src="geopevele.png" alt="Artisan Menuisier">
+      <img src="img/geopevele.png" alt="Artisan Menuisier">
       <h3>Bureau d'études géotechniques</h3>
       <p>Site moderne avec galerie de réalisations et formulaire de contact.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="fade-in">
+  <h2>FAQ - Questions fréquentes</h2>
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+      Quels sont les tarifs pour la création d’un site vitrine ?
+      <span class="faq-icon">+</span>
+    </button>
+    <div id="faq1" class="faq-answer" hidden>
+      Les tarifs varient selon la complexité, généralement entre 500€ et 1500€. Contactez-moi pour un devis personnalisé.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+      Combien de temps faut-il pour finaliser un projet ?
+      <span class="faq-icon">+</span>
+    </button>
+    <div id="faq2" class="faq-answer" hidden>
+      En moyenne, un site vitrine est prêt en 2 à 4 semaines, selon le nombre de pages et fonctionnalités demandées.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+      Proposez-vous une formation pour gérer le site après livraison ?
+      <span class="faq-icon">+</span>
+    </button>
+    <div id="faq3" class="faq-answer" hidden>
+      Oui, je propose une formation simple pour vous aider à mettre à jour facilement votre site.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+      Le site sera-t-il compatible avec tous les appareils (mobile, tablette, PC) ?
+      <span class="faq-icon">+</span>
+    </button>
+    <div id="faq4" class="faq-answer" hidden>
+      Absolument, tous les sites que je crée sont 100% responsive et optimisés pour tous les écrans.
     </div>
   </div>
 </section>
@@ -83,20 +153,55 @@
 <section id="contact" class="fade-in">
   <h2>Me contacter</h2>
   <p class="contact-intro">💬 Un projet ou une question ? <br><strong>Discutons ensemble.</strong></p>
-  <form action="mailto:tonemail@mail.com" method="post" enctype="text/plain">
-    <input type="text" name="Nom" placeholder="Votre nom" required>
-    <input type="email" name="Email" placeholder="Votre email" required>
-    <textarea name="Message" placeholder="Votre message" rows="5" required></textarea>
-    <button type="submit">Envoyer le message</button>
-  </form>
+<form>
+  <input type="text" name="name" placeholder="Votre nom" autocomplete="name">
+  <input type="email" name="email" placeholder="Votre email" autocomplete="email">
+  <textarea name="message" placeholder="Votre message"></textarea>
+  <button type="submit">Envoyer</button>
+</form>
+
 </section>
 
 
   <footer>
-    <p>© 2025 Ton Nom. Tous droits réservés.</p>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>Antoine.</h3>
+      <p>Créateur de sites web à <strong>Templeuve-en-Pévèle (59)</strong>, je conçois des sites modernes, rapides et responsive pour les professionnels locaux.</p>
+<p><i data-lucide="map-pin"></i> Templeuve-en-Pévèle, Hauts-de-France</p>
+<p><i data-lucide="mail"></i> 
+  <a href="mailto:antoine.licour-beaulande@outlook.com"> antoine.licour-beaulande@outlook.com</a>
+</p>
+<p><i data-lucide="phone"></i> 
+  <a href="tel:+33610574535">+33 6 10 57 45 35</a>
+</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Antoine. Tous droits réservés. | <a href="#">Mentions légales</a></p>
+  </div>
+</footer>
+
   </footer>
 
   <script src="script.js"></script> 
-  
+  <!-- Boutons flottants mobile -->
+<div class="floating-buttons">
+  <a href="tel:+33610574535" class="call-btn" aria-label="Appeler"><i data-lucide="phone"></i></a>
+  <button class="scroll-up-btn" aria-label="Remonter" id="scrollUpBtn"><i data-lucide="arrow-up"></i></button>
+</div>
+
 </body>
 </html>
